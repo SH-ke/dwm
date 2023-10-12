@@ -1,0 +1,41 @@
+# alpha
+https://dwm.suckless.org/patches/alpha/dwm-alpha-20230401-348f655.diff
+# auto-start
+# run a script while dwm setup
+https://dwm.suckless.org/patches/autostart/dwm-autostart-20210120-cb3f58a.diff
+# bar-padding
+# show system info in the top bar
+https://dwm.suckless.org/patches/barpadding/dwm-barpadding-20211020-a786211.diff
+# useless gap
+# split windows leaving some gaps
+https://dwm.suckless.org/patches/uselessgap/dwm-uselessgap-20211119-58414bee958f2.diff
+
+
+# awesome bar
+# show windows' name 
+https://dwm.suckless.org/patches/awesomebar/dwm-awesomebar-20230431-6.4.diff
+# full screen
+# show the window full screen
+https://dwm.suckless.org/patches/fullscreen/dwm-fullscreen-6.2.diff
+# hide vacant tags
+# only show the on-using tags in the bar
+https://dwm.suckless.org/patches/hide_vacant_tags/dwm-hide_vacant_tags-6.3.diff
+# pertag
+# different tag, different layout
+https://dwm.suckless.org/patches/pertag/dwm-pertag-20200914-61bb8b2.diff
+# view on tag
+# after sending current window to other tag, show that tag as well
+https://dwm.suckless.org/patches/viewontag/dwm-r1522-viewontag.diff
+# rotate stack
+# change the order of the windows in the same layout
+https://dwm.suckless.org/patches/rotatestack/dwm-rotatestack-20161021-ab9571b.diff
+# scratch pad
+# open a temporary window wherever you are
+https://dwm.suckless.org/patches/scratchpad/dwm-scratchpad-20221102-ba56fe9.diff
+
+# hide and restore
+# hide some windows, and re-show them while using
+
+# restart dwm quickly 
+https://dwm.suckless.org/patches/restartsig/dwm-restartsig-20180523-6.2.diff
+
