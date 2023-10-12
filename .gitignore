@@ -1,0 +1,8 @@
+# Makefile info files
+*.orig
+*.rej
+config.h 
+
+# binary files 
+*.o
+dwm 
