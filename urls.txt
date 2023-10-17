@@ -39,3 +39,5 @@ https://dwm.suckless.org/patches/scratchpad/dwm-scratchpad-20221102-ba56fe9.diff
 # restart dwm quickly 
 https://dwm.suckless.org/patches/restartsig/dwm-restartsig-20180523-6.2.diff
 
+# fibonacci layouts
+https://dwm.suckless.org/patches/fibonacci/dwm-fibonacci-5.8.2.diff
