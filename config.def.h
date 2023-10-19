@@ -29,7 +29,7 @@ static const char *colors[][3]      = {
 static const unsigned int alphas[][3]      = {
     /*               fg      bg        border*/
     [SchemeNorm] = { OPAQUE, baralpha, borderalpha },
-	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
+	  [SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 
 /* tagging */
@@ -79,12 +79,25 @@ static const char *termcmd[]  = { "st", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 
+/* sound light setting commands */
+static const char *lightup[]    = {"xbacklight", "-inc", "10", NULL};                           // 增加10点亮度：xbacklight -inc 10
+static const char *lightdown[]  = {"xbacklight", "-dec", "5", NULL};                            // 减少5点亮度：xbacklight -dec 5
+static const char *soundup[]    = {"amixer", "-qM", "sset", "Master", "10%+", "unmute", NULL};  // 增加5%的音量：amixer -qM sset Master 5%+
+static const char *sounddown[]  = {"amixer", "-qM", "sset", "Master", "20%-", "unmute", NULL};  // 减少10%的音量：amixer -qM sset Master 10%-
+static const char *mute[]       = {"amixer", "-qM", "sset", "Master", "toggle", NULL};          // 静音：amixer -qM sset Master toggle
+
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
+  // sound light settings 
+	{ 0,          XF86XK_MonBrightnessUp,      spawn,          {.v = lightup } },               // MOD + F12，增加亮度
+	{ 0,          XF86XK_MonBrightnessDown,    spawn,          {.v = lightdown } },             // MOD + F11，减少亮度
+	{ 0,          XF86XK_AudioRaiseVolume,     spawn,          {.v = soundup } },               // MOD + F3 ，增加音量
+	{ 0,          XF86XK_AudioLowerVolume,     spawn,          {.v = sounddown } },             // MOD + F2 ，减少音量
+	{ 0,          XF86XK_AudioMute,            spawn,          {.v = mute } },                  // MOD + F1 ，静音
 	{ MODKEY,                       XK_j,      focusstackvis,  {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstackvis,  {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_j,      rotatestack,    {.i = +1 } },
