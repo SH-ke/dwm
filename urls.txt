@@ -41,3 +41,6 @@ https://dwm.suckless.org/patches/restartsig/dwm-restartsig-20180523-6.2.diff
 
 # fibonacci layouts
 https://dwm.suckless.org/patches/fibonacci/dwm-fibonacci-5.8.2.diff
+
+# set nmaster
+https://dwm.suckless.org/patches/resetnmaster/dwm-resetnmaster-pertag-6.3.diff
